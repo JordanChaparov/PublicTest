@@ -977,7 +977,7 @@ class Game:
 
             # Checks if the player mutes the music. If the music stops playing and unloads the file to save resources.
             # The music can be played again if the player presses the button again.
-            elif event.type == pg.KEYDOWN and event.key == pg.Km_m:
+            elif event.type == pg.KEYDOWN and event.key == pg.K_m:
                 self.music = not self.music
                 if self.music:
                     pg.mixer.music.load("bg_music.mp3")
